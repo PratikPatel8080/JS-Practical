@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="submit" onclick="arithmaticOp(4,3)">Submit</button>
+    <div id="answer"></div>
+    <script>
+        // 1. To Perform add, sub, mul & div.
+        function arithmaticOp(a, b) {
+            let output = `
+                    sum: ${a + b}  <br>
+                    sub: ${a - b}  <br>
+                    mul: ${a * b}  <br>
+                    div: ${a / b}  <br>
+            `;
+            document.getElementById("answer").innerHTML= output;
+        }
+        
+        
+    </script>
+</body>
+
+</html>
